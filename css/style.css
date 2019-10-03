@@ -121,58 +121,35 @@ h4 {
     margin: auto;
 }
 
+.sketchbook,
 .print,
 .digital {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px auto;
-    max-width: 85%;
-}
-
-.sketchbook {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px auto;
+    margin: 30px auto 100px;
     max-width: 75%;
 }
 
-.sketch-column {
+.sketch-column,
+.print-column,
+.digital-column {
     flex: 30%;
     margin: 0 auto;
     max-width: 30%;
     text-align: center;
 }
 
-.sketch-img {
+.sketch-img,
+.project-img {
     box-shadow: 5px 5px 12px black;
     margin: 15px auto;
     width: 100%;
 }
 
-.sketch-img:hover {
+.sketch-img:hover,
+.project-img:hover {
     transform: scale(1.8);
     transition: transform 0.3s ease-in-out;
-}
-
-.print {
-    margin-bottom: 100px;
-}
-
-.digital {
-    margin-bottom: 100px;
-}
-
-.project-img {
-    box-shadow: 5px 5px 12px black;
-    height: auto;
-    margin: 15px;
-    width: 320px;
-}
-
-.project-img:hover {
-    transform: scale(1.7);
-    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -199,6 +176,7 @@ h4 {
 .contact-text {
     color: #999;
     margin: auto 10%;
+    text-align: center;
 }
 
 #contact-links {
