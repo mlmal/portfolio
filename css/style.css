@@ -52,8 +52,8 @@ h4 {
 
 /* ***** TOP NAV BAR ***** */
 #navbar {
-    background-color: rgba(203, 201, 199, 0.8);
-    box-shadow: 0 3px 12px #333;
+    background-color: rgba(203, 201, 199, 0.0);
+    /* box-shadow: 0 3px 12px #333; */
     display: block;
     list-style-type: none;
     margin: 0;
@@ -99,6 +99,29 @@ h4 {
     height: 100vh;
     text-align: center;
     width: 100%;
+}
+
+.button {
+    background-color: #e0dfdd;
+    border: 2px solid #ED6A5A;
+    border-radius: 10px;
+    color: #ED6A5A;
+    font-family: "Acme", sans-serif;
+    font-size: 1.2rem;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ED6A5A;
+    border: 2px solid white;
+    color: white;
 }
 
 
@@ -165,6 +188,11 @@ h4 {
     margin: auto 10%;
     padding: 50px;
 }
+
+.sail-vid-container {
+    text-align: center;
+}
+
 
 
 /* ***** FOOTER / CONTACT SECTION ***** */
