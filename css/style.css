@@ -149,7 +149,6 @@ h4 {
     flex-wrap: wrap;
     margin: 20px auto 100px;
     max-width: 85%;
-    justify-content: flex-start;
 }
 
 .sketch-column,
