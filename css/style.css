@@ -102,23 +102,23 @@ h4 {
 }
 
 .button {
-    background-color: #e0dfdd;
     border: 2px solid #ED6A5A;
     border-radius: 10px;
     color: #ED6A5A;
+    cursor: pointer;
+    display: inline-block;
     font-family: "Acme", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin: 4px 2px;
     padding: 12px 22px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    transition-duration: 0.3s;
-    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .button:hover {
     background-color: #ebeae9;
+    border-radius: 50px;
     border-style: dotted;
 }
 
@@ -147,30 +147,61 @@ h4 {
 .digital {
     display: flex;
     flex-wrap: wrap;
-    margin: 30px auto 100px;
-    max-width: 75%;
+    margin: 20px auto 100px;
+    max-width: 85%;
+    justify-content: flex-start;
 }
 
 .sketch-column,
 .print-column,
 .digital-column {
-    flex: 30%;
-    margin: 0 auto;
-    max-width: 30%;
+    flex: 25%;
+    margin: auto;
+    max-width: 22%;
     text-align: center;
 }
 
 .sketch-img,
 .project-img {
-    box-shadow: 5px 5px 12px black;
-    margin: 15px auto;
+    margin: 15px 15px;
     width: 100%;
+    vertical-align: middle;
+    transition: transform .7s ease;
 }
 
 .sketch-img:hover,
 .project-img:hover {
-    transform: scale(1.8);
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+}
+
+
+/* ***** MEDIA QUERIES / PROJECT SECTIONS ***** */
+
+@media (max-width: 1200px) {
+  .sketch-column,
+  .print-column,
+  .digital-column {
+      flex: 50%;
+      max-width: 47%;
+  }
+  .sketch-img:hover,
+  .project-img:hover {
+      transform: scale(1.2);
+  }
+}
+
+@media (max-width: 800px) {
+  .sketch-column,
+  .print-column,
+  .digital-column {
+      flex: 100%;
+      max-width: 95%;
+  }
+  .sketch-img:hover,
+  .project-img:hover {
+      transform: scale(1.1);
+  }
 }
 
 
@@ -249,14 +280,4 @@ h4 {
 .fab {
     font-size: 2rem;
     padding: 35px 15px;
-}
-
-
-
-@media (max-width: 420px) {
-    #welcome-section {
-        background: url("/images/sketch4.jpg") no-repeat left top fixed;
-        background-size: auto;
-        height: 100vh;
-    }
 }
