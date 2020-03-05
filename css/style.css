@@ -85,6 +85,10 @@ h4 {
     font-weight: 600;
     margin: 1px 30px;
 }
+.m-link {
+    color: #ED6A5A;
+    text-decoration: none;
+}
 
 
 /* ***** TOP WELCOME SCREEN ***** */
@@ -143,8 +147,7 @@ h4 {
 }
 
 .sketchbook,
-.print,
-.digital {
+.print-digital {
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto 100px;
@@ -279,4 +282,31 @@ h4 {
 .fab {
     font-size: 2rem;
     padding: 35px 15px;
+}
+
+
+/* ***** PORTFOLIO PAGES ***** */
+
+#project-page {
+    background-color: #CBC9C7;
+    padding: 120px 8% 120px;
+}
+.project-title {
+    background-color: white;
+    box-shadow: 5px 5px 12px #666;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.description-container {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0 5px;
+}
+.image-container {
+    width: 100%;
+    margin: auto;
+}
+.hot-tomato-images {
+    width: 100%;
+    vertical-align: middle;
 }
